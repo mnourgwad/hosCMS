@@ -12,7 +12,7 @@ ng serve --host 0.0.0.0 -o
 * To deploy to github pages:
 
 ```terminal
-ng build --prod --output-path docs --base-href /hosCMS/
+ng build --prod --output-path docs --base-href hosCMS
 ```
 
 ## Output
