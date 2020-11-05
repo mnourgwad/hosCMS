@@ -1,0 +1,32 @@
+<mat-tab-group>
+  <div *ngFor="let item of myMainItems">
+    <mat-tab [(label)]="item.mainItemNameAr">
+      <br>
+      <div *ngFor="let subitem of item.subItems" class="range-control range">
+        <label> {{ subitem.subItemNameAr }}</label>
+        <ng5-slider [(value)]="subitem.mainItemID" [(highValue)]="subitem.subItemID" [options]="options"
+          [manualRefresh]="slidersRefresh">
+        </ng5-slider>
+      </div>
+    </mat-tab>
+  </div>
+</mat-tab-group>
+
+
+<!-- 
+<div *ngFor="let item of items;let i = index;" class="range-control range">
+  <label> {{ item.name }}</label>
+
+  < !--  
+    <mat-form-field>
+        <input matInput [(ngModel)]="item.from" type="number" [disabled]="!item.active">
+    </mat-form-field> 
+    - ->
+
+  <ng5-slider [(value)]="item.from" [(highValue)]="item.to" [options]="options" [manualRefresh]="slidersRefresh">
+  </ng5-slider>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="item.to" type="number" [disabled]="!item.active">
+  </mat-form-field>
+</div> -->
