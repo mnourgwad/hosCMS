@@ -17,5 +17,5 @@ ng build --prod --output-path docs --base-href hosCMS
 
 ## Output
 
-<img src="docs/screen1.png" alt="screen1">
-<img src="docs/screen2.png" alt="screen2">
+<img src="doc/screen1.png" alt="screen1">
+<img src="doc/screen2.png" alt="screen2">
