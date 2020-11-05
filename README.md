@@ -2,9 +2,15 @@
 Construction Management System
 
 ## Build and Run
-To build and run the app (for development):
+* To build and run the app (for development):
 ```terminal
 ng serve --host 0.0.0.0 -o
+```
+
+* To deploy to github pages:
+
+```terminal
+ng build --prod --output-path docs --base-href /hosCMS/
 ```
 
 ## Output
