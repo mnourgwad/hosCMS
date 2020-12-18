@@ -24,7 +24,7 @@ cd hosCMS
 To build and run the app (for development):
 
 ```terminal
-ng install
+npm install
 ng serve --host 0.0.0.0 -o
 ```
 
