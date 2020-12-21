@@ -4,7 +4,7 @@ import { DataSource } from "@angular/cdk/collections";
 import { Observable } from "rxjs";
 import { of } from "rxjs";
 
-import { Options } from "ng5-slider";
+
 import { DbconnectionService } from "../services/dbconnection.service";
 import { Project, mainItem } from "../services/myInterfaces";
 
@@ -31,19 +31,9 @@ const filter: Filter[] = [
 })
 export class ItemlogComponent implements OnInit {
   //constructor() { }
-
+  currentValue = 0;
   //range slider options
   // source: https://github.com/angular-slider/ngx-slider/blob/HEAD/STYLING.md
-  options: Options = {
-    floor: 0,
-    ceil: 100,
-    disabled: false,
-    hideLimitLabels: true,
-    hidePointerLabels: false,
-    //step: 10,
-    //showTicks: true,
-    //showTicksValues: true
-  };
 
   items: Filter[] = [
     { name: "اعمدة ميزانين الارضي", from: 10, to: 50, active: true },
@@ -69,7 +59,7 @@ export class ItemlogComponent implements OnInit {
   ngOnInit() {
     this.currentProject = this.dbData.getProject();
     this.myMainItems = this.dbData.getAllItems();
-    //console.log(this.myMainItems[0]);
+    console.log(this.myMainItems[0]);
   }
 
   reset(): void {

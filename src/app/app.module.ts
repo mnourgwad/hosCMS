@@ -11,6 +11,7 @@ import { ButtonComponent } from './button/button.component';
 import { TableComponent } from './table/table.component';
 import { ItemlogComponent } from './itemlog/itemlog.component';
 import { DbconnectionService } from './services/dbconnection.service';
+import { MySliderComponent } from './my-slider/my-slider.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { DbconnectionService } from './services/dbconnection.service';
     ButtonComponent,
     TableComponent,
     ItemlogComponent,
+    MySliderComponent,
   ],
   imports: [
     BrowserModule,     

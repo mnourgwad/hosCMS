@@ -58,6 +58,7 @@ export interface subItem {
   subItemcode: string;
   isShow: Boolean;
   displayOrder: number;
+  percentage?: number;
 }
 //-----------------------------------------------------------------------------
 

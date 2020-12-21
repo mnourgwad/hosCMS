@@ -131,7 +131,8 @@ const myMainItems: mainItem[] = [
         subItemNameAr: "الحفر",
         subItemcode: "EX",
         isShow: true,
-        displayOrder: 0
+        displayOrder: 0,
+        percentage: 10
       },
       {
         subItemID: 2,
@@ -140,7 +141,8 @@ const myMainItems: mainItem[] = [
         subItemNameAr: "الاحلال",
         subItemcode: "EF",
         isShow: true,
-        displayOrder: 0
+        displayOrder: 0,
+        percentage: 50
       }
     ]
   },
